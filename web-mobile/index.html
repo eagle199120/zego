@@ -73,9 +73,12 @@
       document.body.appendChild(domScript);
     }
 
-    loadScript('cocos2d-js-min.8c5a2.js', function () {
+    setTimeout(loadScript('cocos2d-js-min.8c5a2.js', function () {
       window.boot();
-    });
+    }), 1000);
+    // loadScript('cocos2d-js-min.8c5a2.js', function () {
+    //   window.boot();
+    // });
 })();
 </script>
 </body>
