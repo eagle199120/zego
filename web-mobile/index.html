@@ -48,36 +48,36 @@
     </div>
   </div>
 
-<script src="src/settings.d49f8.js" charset="utf-8"></script>
+  <script src="src/settings.d49f8.js" charset="utf-8"></script>
 
-<script src="ZegoExpressWebRTC-1.5.0.9a4c9.js" charset="utf-8"></script>
+  <script src="ZegoExpressWebRTC-1.5.0.9a4c9.js" charset="utf-8"></script>
 
-<script src="vconsole.min.js" charset="utf-8"></script>
+  <script src="vconsole.min.js" charset="utf-8"></script>
 
-<script src="main.f00a4.js" charset="utf-8"></script>
-
-<script type="text/javascript">
-window.onload = function() {
-  window.vConsole = new VConsole();
-
-  function loadScript (moduleName, cb) {
-    var domScript = document.createElement('script');
-
-    function scriptLoaded () {
-        domScript.removeEventListener('load', scriptLoaded, false);
-        document.body.removeChild(domScript);
-        cb && cb();
-    };
-    domScript.async = true;
-    domScript.src = moduleName;
-    domScript.addEventListener('load', scriptLoaded, false);
-    document.body.appendChild(domScript);
-  }
-
-  loadScript('cocos2d-js-min.8c5a2.js', function () {
-    window.boot();
-  });
-}
-</script>
+  <script src="main.f00a4.js" charset="utf-8"></script>
 </body>
 </html>
+
+<script type="text/javascript">
+  window.onload = function() {
+    window.vConsole = new VConsole();
+
+    function loadScript (moduleName, cb) {
+      var domScript = document.createElement('script');
+
+      function scriptLoaded () {
+          domScript.removeEventListener('load', scriptLoaded, false);
+          document.body.removeChild(domScript);
+          cb && cb();
+      };
+      domScript.async = true;
+      domScript.src = moduleName;
+      domScript.addEventListener('load', scriptLoaded, false);
+      document.body.appendChild(domScript);
+    }
+
+    loadScript('cocos2d-js-min.8c5a2.js', function () {
+      window.boot();
+    });
+  }
+</script>
