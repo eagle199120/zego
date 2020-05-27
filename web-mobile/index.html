@@ -58,9 +58,7 @@
 
 <script type="text/javascript">
 (function () {
-    if (typeof VConsole !== 'undefined') {
-        window.vConsole = new VConsole();
-    }
+    window.vConsole = new VConsole();
 
     function loadScript (moduleName, cb) {
       function scriptLoaded () {
