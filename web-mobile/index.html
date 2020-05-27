@@ -37,14 +37,6 @@
   <!--<link rel="apple-touch-icon" href=".png" />-->
   <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
-  <script src="src/settings.d49f8.js" charset="utf-8"></script>
-
-  <script src="ZegoExpressWebRTC-1.5.0.9a4c9.js" charset="utf-8"></script>
-
-  <script src="vconsole.min.js" charset="utf-8"></script>
-
-  <script src="main.f00a4.js" charset="utf-8"></script>
-
   <link rel="stylesheet" type="text/css" href="style-mobile.25fc5.css"/>
   <link rel="icon" href="favicon.8de18.ico"/>
 </head>
@@ -55,6 +47,14 @@
       <span style="width: 0%"></span>
     </div>
   </div>
+
+<script src="src/settings.d49f8.js" charset="utf-8"></script>
+
+<script src="ZegoExpressWebRTC-1.5.0.9a4c9.js" charset="utf-8"></script>
+
+<script src="vconsole.min.js" charset="utf-8"></script>
+
+<script src="main.f00a4.js" charset="utf-8"></script>
 
 <script type="text/javascript">
 (function () {
@@ -73,13 +73,9 @@
       document.body.appendChild(domScript);
     }
 
-    setTimeout(loadScript('cocos2d-js-min.8c5a2.js', function () {
+    loadScript('cocos2d-js-min.8c5a2.js', function () {
       window.boot();
-    }), 1000);
-    
-    // loadScript('cocos2d-js-min.8c5a2.js', function () {
-    //   window.boot();
-    // });
+    });
 })();
 </script>
 </body>
