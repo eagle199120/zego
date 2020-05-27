@@ -61,12 +61,13 @@
     window.vConsole = new VConsole();
 
     function loadScript (moduleName, cb) {
+      var domScript = document.createElement('script');
+
       function scriptLoaded () {
-          document.body.removeChild(domScript);
           domScript.removeEventListener('load', scriptLoaded, false);
+          document.body.removeChild(domScript);
           cb && cb();
       };
-      var domScript = document.createElement('script');
       domScript.async = true;
       domScript.src = moduleName;
       domScript.addEventListener('load', scriptLoaded, false);
